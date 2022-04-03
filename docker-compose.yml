@@ -57,7 +57,7 @@ services:
       - hix_test_kv:/data
 volumes:
   hix_test_bundle:
-  hix_test_db: 
+  hix_test_db:
   hix_test_kv:
   hix_test_log:
   hix_test_node_modules:
