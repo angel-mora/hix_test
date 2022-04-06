@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddPgSearchDmetaphoneSupportFunctions < ActiveRecord::Migration[7.0]
+class AddPgSearchDmetaphoneSupportFunctions < ActiveRecord::Migration[6.1]
   def up
     execute <<~'SQL'.squish
       CREATE OR REPLACE FUNCTION pg_search_dmetaphone(text) RETURNS text LANGUAGE SQL IMMUTABLE STRICT AS $function$
